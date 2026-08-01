@@ -14,7 +14,12 @@ export const metadata: Metadata = {
   title: "Anclora SyncXML",
   description: "Excel seguro de reservas a XML de hospedaje por reserva.",
   icons: {
-    icon: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/syncxml_favicon.ico", sizes: "any" },
+      { url: "/syncxml_favicon-32.png", type: "image/png", sizes: "32x32" },
+    ],
+    apple: "/syncxml_apple-touch-icon.png",
   },
 };
 
