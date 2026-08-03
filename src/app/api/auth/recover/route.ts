@@ -36,7 +36,7 @@ function buildRecoveryEmail(input: {
 }) {
   const baseUrl = input.appUrl.replace(/\/$/, "");
   const loginUrl = `${baseUrl}/login`;
-  const logoUrl = `${baseUrl}/brand/logo-anclora-syncxml-email.png`;
+  const logoUrl = `${baseUrl}/brand/anclora-syncxml-email.png`;
   const expiresAt = input.expiresAt.toISOString();
   const subject = `${APP_NAME} - nueva contraseña temporal`;
   const text = [

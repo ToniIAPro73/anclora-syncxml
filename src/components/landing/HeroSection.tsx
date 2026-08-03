@@ -50,7 +50,7 @@ export function HeroSection() {
           <div className="l-card l-card-gold p-5 md:p-6">
             <div className="flex items-center gap-4">
               <img
-                src="/brand/logo-anclora-syncxml.png"
+                src="/brand/anclora-syncxml.png"
                 alt={copy.aria.logoAlt}
                 width={56}
                 height={56}

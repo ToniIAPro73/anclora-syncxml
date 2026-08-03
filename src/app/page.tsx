@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description,
     type: "website",
     siteName: "Anclora SyncXML",
-    images: [{ url: "/brand/logo-anclora-syncxml.png" }],
+    images: [{ url: "/brand/anclora-syncxml.png" }],
   },
   twitter: {
     card: "summary",

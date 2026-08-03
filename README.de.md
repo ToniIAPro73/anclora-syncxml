@@ -2,53 +2,87 @@
 
 <div align="center">
 
-<img src="./public/brand/logo-anclora-syncxml.png" alt="Anclora SyncXML" width="120" />
+<img src="./public/brand/anclora-syncxml.png" alt="Anclora SyncXML" width="132" />
 
 # Anclora SyncXML
 
-### Repositorio interno del ecosistema Anclora para operaciones de familia premium
+### Sichere Umwandlung von Excel-Buchungen in XML pro Reservierung
+
+Premium-Produkt in der Pre-MVP-Phase, das Excel-Tabellen mit Unterkunftsbuchungen in normalisierte XML-Dateien pro Reservierung umwandelt, bereit für die erforderlichen Meldesysteme.
 
 [Español](./README.md) · [English](./README.en.md) · **Deutsch**
 
 <br />
 
 ![Anclora](https://img.shields.io/badge/Anclora-ecosystem-111827)
-![Documentation](https://img.shields.io/badge/documentation-premium-BFA46A)
-![Languages](https://img.shields.io/badge/languages-ES%20%7C%20EN-047857)
+![Kategorie](https://img.shields.io/badge/kategorie-Premium-C07860)
+![Sprachen](https://img.shields.io/badge/sprachen-ES%20%7C%20EN%20%7C%20DE-047857)
 
 </div>
 
 ---
 
 > [!IMPORTANT]
-> Reduziertes Repository des Anclora-Okosystems. Es beschreibt Produktumfang und Architektur,
-> ohne operative Logik, Geheimnisse oder reale Daten offenzulegen.
+> Internes Repository des Anclora-Ökosystems. Produkt in der **Pre-MVP**-Phase. Keine operativen Details, Zugangsdaten oder sensible Logik außerhalb autorisierter Kanäle veröffentlichen.
 
-## Kurzuberblick
+## Was es ist
 
-| Herausforderung | Produktantwort |
-| --- | --- |
-| Fragmentierter Kontext | Gefuhrter und nachvollziehbarer Ablauf |
-| Sensible Daten | Datenschutz durch Design |
-| Komplexe Entscheidung | Klarer konzeptioneller Prozess |
-| Professioneller Betrieb | Modulare Architektur und Qualitatskontrollen |
+Anclora SyncXML wandelt Excel-Tabellen mit Unterkunftsbuchungen in einzelne XML-Dateien pro Reservierung um, mit Datenvalidierung und kontrolliertem Download-Ablauf. Es soll die Meldepflicht für Beherbergungsbetriebe anhand gängiger Branchendatenquellen vereinfachen.
 
-## Konzeptueller Ablauf
+## Kategorie im Ökosystem
 
-```text
-Eingabe / Evidenz
-      ↓
-Validierung und Normalisierung
-      ↓
-Produktfluss
-      ↓
-Prufung oder erklarbares Ergebnis
-      ↓
-Professionelle Ausgabe
+| Feld | Wert |
+|---|---|
+| Kategorie | Premium |
+| Status | Pre-MVP |
+| Markenakzent | `#BFA46A` |
+| Typografie | DM Sans |
+| Kanonisches Repository | `anclora-syncxml` |
+
+## Kernfunktionen
+
+- Excel-Buchungsimport und -Parsing (ExcelJS)
+- XML-Erzeugung pro Reservierung (fast-xml-parser)
+- ZIP-verpackter Download (JSZip)
+- Persistenz mit Prisma
+- Dateispeicherung auf Vercel Blob
+- E-Mail-Benachrichtigungen (Resend)
+
+## Technologie-Stack
+
+| Bereich | Technologie |
+|---|---|
+| Framework | Next.js, React |
+| Datenbank | Prisma |
+| Datenverarbeitung | ExcelJS, fast-xml-parser, JSZip |
+| Speicher | Vercel Blob |
+| E-Mail | Resend |
+| Tests | Testing Library, Jest DOM |
+
+## Lokaler Start
+
+```bash
+npm install
+npm run dev
 ```
 
-## Governance
+## Unterstützte Sprachen
 
-- Kanonisches Produkt: `anclora-syncxml`
-- Familie: `premium`
-- Ziel-Sichtbarkeit: `private`
+- Español (Standard)
+- English
+- Deutsch
+
+## Dokumentation und Governance
+
+- Marken- und Governance-Verträge: [`docs/standards/`](./docs/standards/)
+- Anclora Vault (Quelle der Wahrheit): `contracts/` und `docs/governance/`
+
+---
+
+<div align="center">
+
+### Anclora Group
+
+Interne Nutzung.
+
+</div>

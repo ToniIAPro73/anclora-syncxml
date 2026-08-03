@@ -75,7 +75,7 @@ export function LandingHeader() {
       <div className="l-container flex h-[var(--l-header-h)] items-center justify-between gap-4">
         <Link href="/" className="flex items-center gap-2.5" aria-label={copy.aria.home}>
           <img
-            src="/brand/logo-anclora-syncxml.png"
+            src="/brand/anclora-syncxml.png"
             alt={copy.aria.logoAlt}
             width={34}
             height={34}

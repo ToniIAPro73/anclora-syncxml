@@ -16,7 +16,7 @@ export function AppLogo({
   const mark = (
     <img
       className="app-logo-mark"
-      src="/brand/logo-anclora-syncxml.png"
+      src="/brand/anclora-syncxml.png"
       alt=""
       aria-hidden="true"
       style={{ width: size, height: size }}

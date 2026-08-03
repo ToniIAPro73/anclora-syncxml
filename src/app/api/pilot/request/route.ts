@@ -117,7 +117,7 @@ function buildPilotRequestEmail(normalized: {
   acceptsSyntheticOrAnonymizedData: boolean;
 }, data: z.infer<typeof requestSchema>, appUrl: string) {
   const baseUrl = appUrl.replace(/\/$/, "");
-  const logoUrl = `${baseUrl}/brand/logo-anclora-syncxml-email.png`;
+  const logoUrl = `${baseUrl}/brand/anclora-syncxml-email.png`;
   const preview = `Nueva solicitud de piloto controlado recibida en ${APP_NAME}.`;
   const subject = `${APP_NAME} - solicitud de piloto controlado`;
 

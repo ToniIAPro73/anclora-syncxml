@@ -19,7 +19,7 @@ export function LandingFooter() {
           <div className="max-w-sm">
             <div className="flex items-center gap-2.5">
               <img
-                src="/brand/logo-anclora-syncxml.png"
+                src="/brand/anclora-syncxml.png"
                 alt={copy.aria.logoAlt}
                 width={34}
                 height={34}
