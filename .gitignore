@@ -53,3 +53,5 @@ data/state_store.db/
 
 # Generated manual work files
 tmp/manual-pdf/
+next-env.d.ts
+next-env.d.ts
