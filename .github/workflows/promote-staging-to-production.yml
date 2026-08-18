@@ -54,7 +54,7 @@ jobs:
         run: git checkout production
 
       - name: Merge staging
-        run: git merge --no-ff origin/staging -m "chore: merge staging to production [ci-skip]"
+        run: 'git merge --no-ff origin/staging -m "chore: merge staging to production [ci-skip]"'
 
       - name: Lint
         run: npm run lint

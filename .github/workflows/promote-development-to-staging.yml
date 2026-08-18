@@ -49,7 +49,7 @@ jobs:
         run: git checkout staging
 
       - name: Merge development
-        run: git merge --no-ff origin/development -m "chore: merge development to staging [ci-skip]"
+        run: 'git merge --no-ff origin/development -m "chore: merge development to staging [ci-skip]"'
 
       - name: Lint
         run: npm run lint
